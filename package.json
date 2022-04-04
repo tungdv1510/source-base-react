@@ -1,0 +1,89 @@
+
+  
+{
+  "name": "source-base-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ethersproject/bignumber": "^5.5.0",
+    "@ethersproject/contracts": "^5.5.0",
+    "@ethersproject/providers": "^5.5.1",
+    "@ethersproject/units": "^5.5.0",
+    "@ethersproject/wallet": "^5.5.0",
+    "@metamask/detect-provider": "^1.2.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@reduxjs/toolkit": "^1.7.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.25",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.1.7",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "antd": "^4.18.8",
+    "axios": "^0.25.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.4.1",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.0",
+    "react-toast-notifications": "^2.5.1",
+    "typescript": "^4.5.5",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "compile-opv": "typechain --target ethers-v5 --out-dir src/contracts_type/types/opv src/abi/opv.json",
+    "compile-marketplace": "typechain --target ethers-v5 --out-dir src/contracts_type/types/marketplace artifacts/contracts/op-marketplace.sol/OPVMarketplace.json",
+    "compile-factory": "typechain --target ethers-v5 --out-dir src/contracts_type/types/factory artifacts/contracts/op-factory.sol/OPVFactory.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^8.0.5",
+    "@types/react-infinite-scroller": "^1.2.2",
+    "@types/react-router-dom": "^5.3.3",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.5.2",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typechain": "^6.0.5",
+    "url": "^0.11.0"
+  }
+}
