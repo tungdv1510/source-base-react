@@ -8,7 +8,7 @@ import { useToasts } from "react-toast-notifications"
 import { getMessageType } from "../utils/getMessages"
 import { clearMessage, selectToastMessage } from "../store/toastMessages/slice"
 import TheLoadingSpinner from "../components/common/loading"
-import Layout from "../layout"
+import Layouts from "../layouts"
 import ProtectedRoute from "./ProtectedRoute"
 import { scrollTop } from "../utils/util"
 
@@ -48,7 +48,7 @@ const Routes = () => {
   return (
     <Suspense fallback={<TheLoadingSpinner isLoading={true} />}>
       <TheLoadingSpinner isLoading={isLoading} />
-      <Layout>
+      <Layouts>
         <Switch>
           <Route path={routes.HOMEPAGE} component={Homepage} exact />
 
@@ -61,7 +61,7 @@ const Routes = () => {
 
           <Redirect to={routes.HOMEPAGE} />
         </Switch>
-      </Layout>
+      </Layouts>
     </Suspense>
   )
 }
