@@ -1,0 +1,23 @@
+.loading-container {
+  .loading-content {
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 99999999;
+    transform: translate(-50%, -50%);
+  }
+
+  .loading-overlay {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    display: block;
+    right: 0;
+    bottom: 0;
+  }
+}
